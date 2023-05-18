@@ -31,7 +31,7 @@ function renderProducts(productsArray ) {
         <img class="product-img" src="img/roll/${item.imgSrc}" alt="">
         <div class="card-body text-center">
             <h4 class="item-title">${item.title}</h4>
-            <p><small data-items-in-box class="text-muted">${item.itemsInBox}</small></p>
+            <p><small data-items-in-box class="text-muted">${item.itemsInBox} шт.</small></p>
 
             <div class="details-wrapper">
 
@@ -44,8 +44,8 @@ function renderProducts(productsArray ) {
                 <!-- // Счетчик -->
 
                 <div class="price">
-                    <div class="price__weight">${item.weight}</div>
-                    <div class="price__currency">${item.price}</div>
+                    <div class="price__weight">${item.weight} гр.</div>
+                    <div class="price__currency">${item.price} ₽</div>
                 </div>
             </div>
 
