@@ -35,6 +35,10 @@ deliveryCost.innerText = 'бесплатно'
 deliveryCost.classList.remove('free')
 deliveryCost.innerText = '250 ₽'
 }
+if (totalPrice > 0 && totalPrice < 600) {
+totalPriceEl.innerText = totalPrice + parseInt(deliveryCost.innerText)
+}
+
 
 }
  
